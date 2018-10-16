@@ -1,0 +1,24 @@
+﻿using System;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+
+namespace SeleniumWebDriverFirstTests.Pages
+{
+    public class BasePage
+    {
+        private IWebDriver _driver;
+
+        public BasePage(IWebDriver driver){
+            this._driver = driver;
+        }
+        public string URL => "www.ggbbg.gom";
+            
+        public WebDriverWait Wait => new WebDriverWait(_driver, TimeSpan.FromSeconds(3));
+        public IWebDriver Driver => this._driver;
+       
+        public void NavigateTo(){
+            this.Driver.Url = this.URL;
+        }
+
+    }
+}
