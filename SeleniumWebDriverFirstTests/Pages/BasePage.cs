@@ -12,7 +12,7 @@ namespace SeleniumWebDriverFirstTests.Pages
         public BasePage(IWebDriver driver){
             this._driver = driver;
         }
-        private string URL => "www.ggbbg.gom";
+        public string URL => "www.ggbbg.gom";
             
         public WebDriverWait Wait => new WebDriverWait(_driver, TimeSpan.FromSeconds(3));
         public IWebDriver Driver => this._driver;
