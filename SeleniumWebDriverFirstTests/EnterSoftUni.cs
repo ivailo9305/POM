@@ -36,6 +36,8 @@
             IWebElement logo = driver.FindElement(By.XPath("//*[@id=\"page-header\"]/div[1]/div/div/div[1]/a/img[1]"));
 
             Assert.IsNotNull(logo);
+            //addd comment
+
         }
     }
 }
